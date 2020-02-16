@@ -1,15 +1,22 @@
 <template>
     <div id="app">
-      <h2>我是app组件</h2>
+      <main-tabbar></main-tabbar>
+      <keep-alive>
+          <router-view></router-view>
+      </keep-alive>
     </div>
 </template>
 
 <script>
+import mainTabbar from "components/content/mainTabbar/mainTabbar";
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    mainTabbar
+  }
 }
 </script>
 
-<style>
-
+<style> 
+  @import "assets/css/base.css";
 </style>
