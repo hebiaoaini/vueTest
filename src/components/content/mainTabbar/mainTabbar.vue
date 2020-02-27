@@ -9,7 +9,7 @@
           <img slot="itemImg_light" src="~assets/img/bottomTabbar/settingSelected.png" >
           <img slot="itemImg_dark" src="~assets/img/bottomTabbar/setting.png" >
           <div slot="itemTittle">分类</div>
-      </tabbar-item>
+      </tabbar-item> 
       <tabbar-item path="/shopcar" activeColor="blue">
           <img slot="itemImg_light" src="~assets/img/bottomTabbar/timeSelected.png" >
           <img slot="itemImg_dark" src="~assets/img/bottomTabbar/time.png" >
@@ -42,9 +42,10 @@ export default {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        position: absolute;
+        position: fixed;
         left: 0;
         bottom: 0;
         right: 0;
+        z-index: 999;
     }
 </style>

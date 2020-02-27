@@ -6,3 +6,13 @@ export function getHomePageData(){
         url: ConstData.home_url
     })
 }
+
+export function getHomeGoods(type, page){
+    return requestData({
+        url: ConstData.home_goods_url,
+        params: {
+            type,
+            page
+        }
+    })
+}

@@ -3,7 +3,7 @@ import ConstData from '../common/const_data'
 
 //封装网络请求
 export function requestData(config){
-
+ 
     const interfaceOfRequest = axios.create({
         baseURL: ConstData.Url_head,
         timeout: 3000,
